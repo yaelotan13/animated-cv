@@ -12,12 +12,12 @@ code {
     monospace;
 }
 
-.container {
-  border: 1px solid palevioletred;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 2%;
+h2 {
+  font-size: 2.2vmax;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3vmax;
+  margin: 0;
 }
