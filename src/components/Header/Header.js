@@ -1,10 +1,14 @@
 import "./Header.css";
+import HandSvg from "./hand";
 
 export default function Header() {
   return (
     <div className="container">
       <div className="content">
-        <h2 className="subTitle">Hello World</h2>
+        <div className="subTitleContainer">
+          <h2 className="subTitle">Hello World</h2>
+          <HandSvg />
+        </div>
         <h1 className="mainTitle">I am Yael Lotan, fullstack developer</h1>
         <p className="description">
           I do bla bla bla, I also do bla bla, I enjoy playing beach volleyball

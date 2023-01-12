@@ -1,0 +1,12 @@
+.navBar-container {
+  flex-basis: 6%;
+  background-color: black;
+  border-radius: 30px;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navBar-container {
+    display: none;
+  }
+}
