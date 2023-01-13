@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
+import Timeline from "./components/Timeline/Timeline";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <NavBar />
         <Header />
       </div>
+      <Timeline />
     </div>
   );
 }

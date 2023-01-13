@@ -1,0 +1,29 @@
+.timeline {
+  margin-top: 32px;
+}
+
+.textClassName {
+  color: white;
+}
+
+.materialIconContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stackIconsContainer {
+  display: flex;
+  margin-top: 12px;
+}
+
+.stackIcon {
+  width: 65px;
+  height: 65px;
+  margin: 0 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -9,7 +9,7 @@ export default function Header() {
           <h2 className="subTitle">Hello World</h2>
           <HandSvg />
         </div>
-        <h1 className="mainTitle">I am Yael Lotan, fullstack developer</h1>
+        <h1 className="mainTitle">I am Yael Lotan, a fullstack developer</h1>
         <p className="description">
           I do bla bla bla, I also do bla bla, I enjoy playing beach volleyball
           and eating dim sums. I also want to say that I want world peace and I
