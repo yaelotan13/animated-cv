@@ -1,12 +1,150 @@
 .navBar-container {
-  flex-basis: 6%;
-  background-color: black;
-  border-radius: 30px;
-  margin: 0 1rem;
+  display: flex;
 }
 
 @media only screen and (max-width: 1000px) {
   .navBar-container {
     display: none;
+  }
+}
+
+.navBar {
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  position: relative;
+  background-color: black;
+}
+
+.selector {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  /* background: #777bf6; */
+  background: linear-gradient(
+    90deg,
+    rgba(97, 88, 246, 1) 0%,
+    rgba(119, 123, 246, 1) 19%,
+    rgba(123, 95, 219, 1) 100%
+  );
+  border-radius: 50%;
+  z-index: 2;
+  transition: 0.3s ease;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+nav ul li span {
+  pointer-events: none;
+}
+
+li {
+  color: white;
+}
+
+li.active {
+  color: rgb(46, 54, 64);
+}
+
+li.active span {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+li:hover {
+  scale: 1.2;
+}
+
+li.active:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(97, 88, 246, 1) 0%,
+    rgba(119, 123, 246, 1) 19%,
+    rgba(123, 95, 219, 1) 100%
+  );
+  border-radius: 50%;
+  scale: 1.1;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }

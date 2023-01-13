@@ -1,5 +1,4 @@
 .container {
-  border: 1px solid red;
   display: flex;
   position: relative;
   padding: 2rem;
@@ -13,7 +12,7 @@
     rgba(152, 68, 183, 1) 51%,
     rgba(255, 53, 127, 1) 100%
   );
-  animation: AnimateBG 8s ease infinite;
+  animation: AnimateBG 5s ease infinite;
 }
 
 @keyframes AnimateBG {
@@ -64,20 +63,61 @@
   gap: 16px;
   align-items: center;
   width: fit-content;
+  margin-top: 16px;
 }
 
 .cv-button {
-  padding: 8px;
+  padding: 8px 16px;
   border-radius: 20px;
   border: 1px solid white;
   color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
 }
 
-.linkedin-button {
-  padding: 3px 5px;
-  border-radius: 5px;
-  background-color: rgb(11, 101, 194);
-  color: black;
+.cv-button::after {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.cv-button:hover::after {
+  transform: translate(0, 0);
+}
+
+.cv-button:hover {
+  color: indigo;
+  font-weight: 500;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+.linkedin-btn:hover {
+  opacity: 0.5;
+}
+
+.linkedin-box {
+  fill: white;
+  fill-opacity: 0.4;
+  cursor: pointer;
+}
+
+.linkedin-text {
+  fill: white;
+  cursor: pointer;
 }
 
 .avatar {
