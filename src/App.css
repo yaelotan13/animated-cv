@@ -1,11 +1,10 @@
 .app-container {
-  border: 1px solid green;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  margin: 2%;
+  margin: 1%;
 }
 
 .hero-section {

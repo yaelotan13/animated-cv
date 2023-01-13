@@ -6,12 +6,12 @@ export default function NavBar() {
     let linkItems = document.getElementsByTagName("li");
     let selector = document.getElementById("selector");
 
-    selector.style.top = 3 * 50 - 50 + "px";
+    selector.style.top = 3 * 70 - 70 + "px";
 
     for (let linkItem of linkItems) {
       linkItem.addEventListener("click", (e) => {
         let listNum = e.target.dataset.list;
-        selector.style.top = listNum * 50 - 50 + "px";
+        selector.style.top = listNum * 70 - 70 + "px";
         e.target.classList.add("active");
 
         // remove active class from other links
