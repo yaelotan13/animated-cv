@@ -1,0 +1,214 @@
+.bot {
+  pointer-events: none;
+  position: fixed;
+  bottom: 1%;
+  right: 4%;
+  width: 70px;
+  transform-origin: 0% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 10em;
+}
+
+#bg {
+  fill: #2da1dc;
+}
+#sweater > path:nth-child(1) {
+  fill: #60d882;
+}
+#sweater > path:nth-child(2) {
+  fill: #37c47a;
+}
+#sweater > path:nth-child(3) {
+  fill: #37c47a;
+}
+#face > path:nth-child(1) {
+  fill: #ffe2b8;
+}
+#face > path:nth-child(2) {
+  fill: #ffc987;
+}
+#eye > path:nth-child(2) {
+  fill: #f0f0f0;
+}
+#eye > g:first-of-type > path:nth-child(1) {
+  fill: #159e97;
+}
+#eye > g:first-of-type > path:nth-child(2) {
+  fill: #0f9390;
+}
+#eye > g:last-of-type > path:nth-child(2) {
+  fill: #231f20;
+}
+#mouth > path:nth-child(1) {
+  fill: #f24976;
+}
+#mouth > path:nth-child(2) {
+  fill: #b7092b;
+}
+#mouth > path:nth-child(3) {
+  fill: #a00026;
+}
+#mouth > path:nth-child(4) {
+  fill: #ffffff;
+}
+#hair > path:nth-of-type(1) {
+  fill: #62317c;
+}
+#hair > path:nth-of-type(2) {
+  fill: #62317c;
+}
+#hair > path:nth-of-type(3) {
+  fill: #62317c;
+}
+
+/** chat **/
+.chatContainer {
+  width: 250px;
+  height: 350px;
+  background: rgb(245, 248, 251);
+  position: fixed;
+  right: 1%;
+  bottom: 15%;
+  border-radius: 10px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.19);
+}
+
+.fadeIn {
+  opacity: 0;
+  animation-name: animate-blur-in;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.firstFadeIn {
+  animation-delay: 1s;
+}
+
+.fadeAway {
+  opacity: 1;
+  animation-name: animate-blur-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-blur-in {
+  0% {
+    opacity: 0;
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes animate-blur-out {
+  0% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(15px);
+  }
+}
+
+.xIcon {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+}
+
+.xIcon:hover {
+  opacity: 0.7;
+}
+
+.topSection {
+  background-color: rgb(109, 72, 169);
+  position: absolute;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chatTitle {
+  margin: 10px 0 0 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.conversationContainer {
+  position: absolute;
+  top: 40px;
+  padding: 8px;
+}
+
+.botSentence {
+  display: flex;
+  margin-bottom: 16px;
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+  animation-name: animate-pop;
+  animation-timing-function: ease;
+}
+
+.sentence1 {
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+}
+
+.sentence2 {
+  animation-duration: 0.3s;
+  animation-delay: 4s;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.botAvatar {
+  width: 45px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.sentence {
+  padding: 8px;
+  background-color: rgb(109, 72, 169);
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.upArrowContainer {
+  position: fixed;
+  right: 5.5%;
+  bottom: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: 80px;
+}

@@ -27,3 +27,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media only screen and (max-width: 1170px) {
+  .timeline {
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .timeline {
+    margin-top: 60px;
+  }
+}
