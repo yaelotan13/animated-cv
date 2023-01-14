@@ -170,6 +170,19 @@
 
 @media only screen and (max-width: 660px) {
   .avatar {
-    right: calc(67% - 13rem);
+    width: 9rem;
+    height: 9rem;
+    right: 2rem;
+    bottom: -4rem;
+    background-position: top;
+  }
+
+  .cv-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    gap: 8px;
   }
 }
