@@ -1,3 +1,4 @@
+import React from "react";
 import { useMachine } from "@xstate/react";
 import chatMachine from "../chat-machine";
 import MainActions from "./MainActions";
@@ -6,7 +7,7 @@ import "../ChatBot.css";
 import BotResponse from "./BotResponse";
 import UserResponse from "./UserResponse";
 
-export default function Conversation() {
+export default function Conversation({ startTime }) {
   const [state, send] = useMachine(chatMachine);
 
   const { conversations, actions } = state.context;
@@ -15,6 +16,15 @@ export default function Conversation() {
 
   return (
     <>
+      <BotResponse
+        text={
+          <span>
+            Hey there my name is Pal ❤️ <br /> How can I help you?
+          </span>
+        }
+        shortDelay={false}
+        startTime={startTime}
+      />
       {shouldShowFirstMainActions && (
         <MainActions actions={actions} send={send} />
       )}
@@ -23,7 +33,10 @@ export default function Conversation() {
           <div key={index}>
             {conversation.action && (
               <>
-                <UserResponse text={conversation.action.action} />
+                <UserResponse
+                  text={conversation.action.action}
+                  startTime={startTime}
+                />
                 <BotResponse
                   text={
                     <span>
@@ -32,6 +45,7 @@ export default function Conversation() {
                       option
                     </span>
                   }
+                  startTime={startTime}
                 />
                 {!conversation.subAction && (
                   <SubActions
@@ -41,9 +55,18 @@ export default function Conversation() {
                 )}
                 {conversation.subAction && (
                   <>
-                    <UserResponse text={conversation.subAction.action} />
-                    <BotResponse text={conversation.subAction.response} />
-                    <BotResponse text="Can I help with anything else? 🌈" />
+                    <UserResponse
+                      text={conversation.subAction.action}
+                      startTime={startTime}
+                    />
+                    <BotResponse
+                      text={conversation.subAction.response}
+                      startTime={startTime}
+                    />
+                    <BotResponse
+                      text="Can I help with anything else? 🌈"
+                      startTime={startTime}
+                    />
                   </>
                 )}
                 {state.matches("waitForMainAction") && (
