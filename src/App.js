@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
 import Timeline from "./components/Timeline/Timeline";
 import ChatBot from "./components/ChatBot/ChatBot";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const [{ st, xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }));
@@ -25,6 +26,7 @@ function App() {
         <Header />
       </div>
       <Timeline />
+      <Projects />
       <ChatBot st={st} xy={xy} />
     </div>
   );

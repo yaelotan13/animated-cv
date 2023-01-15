@@ -1,0 +1,75 @@
+.pageContainer {
+  text-align: center;
+  margin: 5vw 24px;
+  padding-bottom: 5vw;
+}
+
+.title {
+  color: white;
+  font-size: 2.5vmax;
+}
+
+.side {
+  font-weight: 300;
+}
+
+.projectsContainer {
+  padding: 2.3vw 5vw;
+  display: flex;
+  gap: 3vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 25vw;
+  height: 20vw;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.project:hover {
+  opacity: 0.7;
+}
+
+.innerProjectSection {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(59, 173, 227, 1) 0%,
+    rgba(87, 111, 230, 1) 25%,
+    rgba(152, 68, 183, 1) 51%,
+    rgba(255, 53, 127, 1) 100%
+  );
+  opacity: 0.9;
+  color: white;
+  padding: 16px;
+}
+
+.projectDescription {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1000px) {
+  .title {
+    font-size: 3.2vmax;
+  }
+
+  .projectsContainer {
+    padding-top: 4vw;
+  }
+
+  .project {
+    width: 80vw;
+    height: 25vw;
+    background-position: center;
+  }
+}
