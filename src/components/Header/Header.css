@@ -76,6 +76,7 @@
   transition: 0.2s transform ease-in-out;
   will-change: transform;
   z-index: 0;
+  text-decoration: none;
 }
 
 .cv-button::after {

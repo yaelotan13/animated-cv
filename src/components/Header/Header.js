@@ -16,7 +16,13 @@ export default function Header() {
           think this paragraph is long enough now.
         </p>
         <div className="buttons">
-          <div className="cv-button">DOWNLOAD CV</div>
+          <a
+            className="cv-button"
+            href="/Yael_Lotan_CV.pdf"
+            download="Yael_Lotan_CV"
+          >
+            DOWNLOAD CV
+          </a>
           <a
             href="https://www.linkedin.com/in/yael-lotan-030266132/"
             target="_blank"

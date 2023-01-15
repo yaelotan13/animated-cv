@@ -16,7 +16,14 @@ const actions = [
           </a>
         ),
       },
-      { action: "CV", response: "click to download" },
+      {
+        action: "CV",
+        response: (
+          <a href="/Yael_Lotan_CV.pdf" download="Yael_Lotan_CV">
+            Click to download
+          </a>
+        ),
+      },
       { action: "Email", response: "yaelotan19@gmail.com" },
       { action: "Phone number", response: "054-6323450" },
     ],
