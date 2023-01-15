@@ -2,7 +2,7 @@ import { createMachine, assign } from "xstate";
 
 const actions = [
   {
-    action: "Getting in touch with Yael",
+    action: "Getting in touch with Yael 📬",
     subActions: [
       {
         action: "Linkedin account",
@@ -22,7 +22,7 @@ const actions = [
     ],
   },
   {
-    action: "Beach volleyball tips",
+    action: "Beach volleyball tips 🏐",
     subActions: [
       {
         action: "Attacking",
@@ -47,6 +47,99 @@ const actions = [
         action: "Reception",
         response:
           "Set your platform as early as possible without swinging you hands to the ball 🌈",
+      },
+    ],
+  },
+  {
+    action: "Find an holiday destination 🛫",
+    subActions: [
+      {
+        action: "Urban",
+        response: [
+          "London! 🎡",
+          "Madrid! 🦬",
+          "Paris! 🥐",
+          "Rome! 🍝",
+          "San Francisco! 🌉",
+          "Berlin! 🪩",
+          "Boston! 🐿",
+        ],
+      },
+      {
+        action: "Relax",
+        response: [
+          "Thailand! 🏖",
+          "Zanzibar! 🏝",
+          "Mauritius! ⛱",
+          "Seychelles! 🍹",
+        ],
+      },
+      {
+        action: "Explore",
+        response: [
+          "Vietnam! 🗿",
+          "New york! 🗽",
+          "New Zealand! 🏕",
+          "Marocco! 🕌",
+          "Japan! 👘",
+          "China! 🐲",
+        ],
+      },
+      {
+        action: "Eat",
+        response: [
+          "Italy! 🍕",
+          "Japan! 🍱",
+          "Spain! 🥘",
+          "Swiss! 🧀",
+          "Germany! 🌭",
+          "Mexico! 🌮",
+          "Greece! 🍤",
+        ],
+      },
+    ],
+  },
+  {
+    action: "Decide on lunch 🍽",
+    subActions: [
+      {
+        action: "Asian",
+        response: [
+          "Dim sum 🥟",
+          "Sushi 🍣",
+          "Curry 🍛",
+          "Nodels 🥡",
+          "Ramen 🍜",
+          "",
+        ],
+      },
+      {
+        action: "Surprise me",
+        response: [
+          "Burrito 🌯",
+          "Sandwich 🥪",
+          "Ramen 🍜",
+          "Dim sum 🥟",
+          "Sushi 🍣",
+          "Falafel 🧆",
+          "Taco 🌮",
+          "Spaghetti 🍝",
+        ],
+      },
+      {
+        action: "Karnivor vibe",
+        response: ["Burger 🍔", "Rotisserie 🍗", "Steak 🥩"],
+      },
+      {
+        action: "Veggy",
+        response: [
+          "Falafel 🧆",
+          "Salad 🥗",
+          "Veggy ramen 🍜",
+          "Pizza 🍕",
+          "Veggy bagel 🥯",
+          "Veggy sushi 🍣",
+        ],
       },
     ],
   },
@@ -102,7 +195,15 @@ export default createMachine(
           ...updatedConversations[updatedConversations.length - 1],
         };
 
-        updatedLastConversation.subAction = event.value;
+        const subAction = { ...event.value };
+        if (Array.isArray(event.value.response)) {
+          const randomIndex = Math.floor(
+            Math.random() * event.value.response.length
+          );
+          subAction.response = event.value.response[randomIndex];
+        }
+
+        updatedLastConversation.subAction = subAction;
         updatedConversations[updatedConversations.length - 1] =
           updatedLastConversation;
 
