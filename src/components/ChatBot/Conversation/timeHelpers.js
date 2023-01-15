@@ -8,14 +8,21 @@ export function updateTime(startTime, setTimeText) {
     const diffMinutes = currentTime.diff(startTime, "minutes");
     const diffHours = currentTime.diff(startTime, "hours");
     const diffDays = currentTime.diff(startTime, "days");
+
+    const humanize = (diff, entity) => {
+      return diff < 2
+        ? `${entity === "hour" ? "an" : "a"} ${entity} ago`
+        : `${diff} ${entity}s ago`;
+    };
+
     setTimeText(
       diffDays > 0
-        ? `${diffDays} days ago`
+        ? humanize(diffDays, "day")
         : diffHours > 0
-        ? `${diffMinutes} hours ago`
+        ? humanize(diffHours, "hour")
         : diffMinutes > 0
-        ? `${diffMinutes} minutes ago`
-        : "Just now"
+        ? humanize(diffMinutes, "minute")
+        : "just now"
     );
   }, oneMinute);
 }
