@@ -29,7 +29,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="pageContainer">
+    <div className="pageContainer" id="sideProjects">
       <h1 className="title">
         <span className="side">Side </span>Projects
       </h1>

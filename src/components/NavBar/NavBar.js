@@ -6,7 +6,7 @@ export default function NavBar() {
     let linkItems = document.getElementsByTagName("li");
     let selector = document.getElementById("selector");
 
-    selector.style.top = 3 * 70 - 70 + "px";
+    selector.style.top = 1 * 70 - 70 + "px";
 
     for (let linkItem of linkItems) {
       linkItem.addEventListener("click", (e) => {
@@ -24,26 +24,35 @@ export default function NavBar() {
     }
   }, []);
 
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
   return (
     <div className="navBar-container">
       <div className="navBar">
         <nav>
           <div className="selector" id="selector"></div>
           <ul>
-            <li data-list="1">
-              <span className="material-icons">dashboard</span>
-            </li>
-            <li data-list="2">
-              <span className="material-icons">chat_bubble_outline</span>
-            </li>
-            <li data-list="3" className="active">
+            <li
+              data-list="1"
+              className="active"
+              onClick={() => scrollTo("header")}
+            >
               <span className="material-icons">home</span>
             </li>
-            <li data-list="4">
-              <span className="material-icons">favorite_border</span>
+            <li data-list="2" onClick={() => scrollTo("timeline")}>
+              <span className="material-icons">timeline</span>
             </li>
-            <li data-list="5">
-              <span className="material-icons">info</span>
+            <li data-list="3" onClick={() => scrollTo("sideProjects")}>
+              <span className="material-icons">dashboard</span>
+            </li>
+            <li data-list="4" onClick={() => scrollTo("contact")}>
+              <span className="material-icons">call</span>
             </li>
           </ul>
         </nav>
