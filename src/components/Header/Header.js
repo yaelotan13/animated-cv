@@ -2,7 +2,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className="container">
+    <div className="container" id="header">
       <div className="content">
         <div className="subTitleContainer">
           <h2 className="subTitle">Hello World</h2>
