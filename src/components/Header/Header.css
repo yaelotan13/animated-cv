@@ -106,17 +106,21 @@
   will-change: transform;
 }
 
-.linkedin-btn:hover {
+.icon-btn:hover {
   opacity: 0.5;
 }
 
-.linkedin-box {
+.icon-box {
   fill: white;
-  fill-opacity: 0.4;
+  fill-opacity: 0.3;
   cursor: pointer;
 }
 
-.linkedin-text {
+.github-icon {
+  fill-opacity: 0.7;
+}
+
+.icon-text {
   fill: white;
   cursor: pointer;
 }
