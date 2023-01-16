@@ -66,6 +66,12 @@
   margin-top: 16px;
 }
 
+.contactIconsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .cv-button {
   padding: 8px 16px;
   border-radius: 20px;
