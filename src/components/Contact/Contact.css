@@ -1,0 +1,87 @@
+.contactContainer {
+  padding: 3vw 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(193, 193, 193);
+  z-index: 1;
+  position: absolute;
+}
+
+.yaelTitle {
+  font-size: 2.4rem;
+}
+
+.jobTitle {
+  font-size: 1.4rem;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+button {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+.cvBtnWrapper {
+  margin-top: 3vw;
+  border-radius: 20px;
+}
+
+.footerCv {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  background: none;
+  text-decoration: inherit;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footerCv:hover {
+  background-image: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.borderGradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.iconsContactContainer {
+  margin-top: 2rem;
+}
+
+.personalInfo {
+  margin-top: 1.4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .jobTitle {
+    margin-bottom: 3vw;
+  }
+
+  .personalInfo {
+    margin-top: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .jobTitle {
+    margin-bottom: 5vw;
+  }
+
+  .personalInfo {
+    margin-top: 4.5vw;
+  }
+}
