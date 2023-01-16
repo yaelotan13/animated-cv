@@ -5,7 +5,7 @@ export default function Project({ project }) {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <>
+    <a href={project.link} target="_blank" rel="noreferrer">
       <div
         className="project"
         style={{ backgroundImage: `url(${project.image})` }}
@@ -19,6 +19,6 @@ export default function Project({ project }) {
           </div>
         )}
       </div>
-    </>
+    </a>
   );
 }
