@@ -7,25 +7,25 @@ export default function Projects() {
       title: "Freddie Mercury",
       description: "CSS art",
       image: "/freddieMercury.png",
-      link: "www.google.com",
+      link: "https://yaelotan13.github.io/Freddie-Mercury-CSS/",
     },
     {
       title: "City",
       description: "CSS art",
       image: "/city.png",
-      link: "www.google.com",
+      link: "https://yaelotan13.github.io/city-css/",
     },
     {
       title: "Lion",
       description: "CSS art",
       image: "/lion.png",
-      link: "www.google.com",
+      link: "https://yaelotan13.github.io/lion-css/",
     },
     {
       title: "Tamagotchi",
       description: "Game with vanilla JS",
       image: "/tamagochi.png",
-      link: "www.google.com",
+      link: "https://yaelotan13.github.io/tamagochi/",
     },
   ];
   return (
