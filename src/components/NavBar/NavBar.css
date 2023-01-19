@@ -1,5 +1,6 @@
 .navBar-container {
   display: flex;
+  margin-left: 1%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -16,7 +17,7 @@
   align-items: center;
 }
 
-nav {
+.navBarNav {
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.19);
   border-radius: 35px;
   position: relative;

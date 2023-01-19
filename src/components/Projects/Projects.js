@@ -23,7 +23,8 @@ export default function Projects() {
     },
     {
       title: "Tamagotchi",
-      description: "Game with vanilla JS",
+      description:
+        "Game with vanilla JS, made by coding along with the course https://frontendmasters.com/courses/front-end-game/",
       image: "/tamagochi.png",
       link: "https://yaelotan13.github.io/tamagochi/",
     },
