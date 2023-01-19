@@ -35,7 +35,7 @@ export default function NavBar() {
   return (
     <div className="navBar-container">
       <div className="navBar">
-        <nav>
+        <nav className="navBarNav">
           <div className="selector" id="selector"></div>
           <ul>
             <li

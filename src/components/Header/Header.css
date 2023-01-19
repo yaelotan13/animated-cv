@@ -12,6 +12,7 @@
     rgba(255, 53, 127, 1) 100%
   );
   animation: AnimateBG 5s ease infinite;
+  width: 100%;
 }
 
 @keyframes AnimateBG {
@@ -54,7 +55,7 @@
 
 .description {
   color: white;
-  font-size: 1.4vw;
+  font-size: 20px;
   margin-top: 16px;
 }
 

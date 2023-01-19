@@ -10,9 +10,7 @@ export default function Header() {
         </div>
         <h1 className="mainTitle">I am Yael Lotan, a fullstack developer</h1>
         <p className="description">
-          I absolutely loves frontend and enjoy seeing my work live on the
-          screen. I also love playing beach volleyball, working out and reading
-          books 🤓
+          I am a frontend lover and a beach volleyball nerd 🤓
         </p>
         <div className="buttons">
           <a
