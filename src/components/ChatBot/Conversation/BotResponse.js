@@ -11,7 +11,7 @@ export default function BotResponse({ text, startTime, shortDelay = true }) {
         shortDelay ? "afterShortDelay1" : "twoSecDelay"
       }`}
     >
-      <img src="/bot.png" alt="bot" className="botAvatar"></img>
+      <img src="/public/bot.png" alt="bot" className="botAvatar"></img>
       <div>
         <p className="sentence">{text}</p>
         <p className="time">{`Pola, ${timeText}`}</p>

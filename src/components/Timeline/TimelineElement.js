@@ -41,7 +41,7 @@ export default function TimelineElement({
             <div
               className="stackIcon"
               key={icon}
-              style={{ backgroundImage: `url("/${icon}.png")` }}
+              style={{ backgroundImage: `url("/public/${icon}.png")` }}
             ></div>
           ))}
         </div>
