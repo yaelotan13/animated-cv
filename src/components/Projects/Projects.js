@@ -6,26 +6,26 @@ export default function Projects() {
     {
       title: "Freddie Mercury",
       description: "CSS art",
-      image: "/freddieMercury.png",
+      image: "freddie",
       link: "https://yaelotan13.github.io/Freddie-Mercury-CSS/",
     },
     {
       title: "City",
       description: "CSS art",
-      image: "/city.png",
+      image: "city",
       link: "https://yaelotan13.github.io/city-css/",
     },
     {
       title: "Lion",
       description: "CSS art",
-      image: "/lion.png",
+      image: "lion",
       link: "https://yaelotan13.github.io/lion-css/",
     },
     {
       title: "Tamagotchi",
       description:
         "Game with vanilla JS, made by coding along with the course https://frontendmasters.com/courses/front-end-game/",
-      image: "/tamagochi.png",
+      image: "tamagochi",
       link: "https://yaelotan13.github.io/tamagochi/",
     },
   ];

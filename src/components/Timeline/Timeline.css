@@ -20,9 +20,9 @@
 }
 
 .stackIcon {
-  width: 65px;
-  height: 65px;
-  margin: 0 4px;
+  width: 55px;
+  height: 55px;
+  margin: 0 6px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,6 +31,11 @@
 @media only screen and (max-width: 1170px) {
   .timeline {
     margin-top: 110px;
+  }
+
+  .stackIconsContainer {
+    margin-top: 24px;
+    margin-bottom: -20px;
   }
 }
 

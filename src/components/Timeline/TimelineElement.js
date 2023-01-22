@@ -1,5 +1,6 @@
 import "./Timeline.css";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import StackImage from "./StackImage";
 import "react-vertical-timeline-component/style.min.css";
 
 export default function TimelineElement({
@@ -38,11 +39,7 @@ export default function TimelineElement({
       {stackIcons && (
         <div className="stackIconsContainer">
           {stackIcons.map((icon) => (
-            <div
-              className="stackIcon"
-              key={icon}
-              style={{ backgroundImage: `url("/public/${icon}.png")` }}
-            ></div>
+            <StackImage key={icon} name={icon} />
           ))}
         </div>
       )}
