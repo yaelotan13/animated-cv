@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/animated-cv/static/css/main.46c5942a.css",
+    "main.css": "/animated-cv/static/css/main.0204cf57.css",
     "main.js": "/animated-cv/static/js/main.611f8894.js",
     "static/media/tamagochi.png": "/animated-cv/static/media/tamagochi.095aef2694e63d5d95b1.png",
     "static/media/city.png": "/animated-cv/static/media/city.1e2f6d011a61cad64b9e.png",
@@ -19,11 +19,11 @@
     "static/media/storybook.png": "/animated-cv/static/media/storybook.615d919326c9dd4da974.png",
     "static/media/bot.png": "/animated-cv/static/media/bot.fbb3e48c288c9effd711.png",
     "index.html": "/animated-cv/index.html",
-    "main.46c5942a.css.map": "/animated-cv/static/css/main.46c5942a.css.map",
+    "main.0204cf57.css.map": "/animated-cv/static/css/main.0204cf57.css.map",
     "main.611f8894.js.map": "/animated-cv/static/js/main.611f8894.js.map"
   },
   "entrypoints": [
-    "static/css/main.46c5942a.css",
+    "static/css/main.0204cf57.css",
     "static/js/main.611f8894.js"
   ]
 }
