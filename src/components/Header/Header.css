@@ -165,7 +165,7 @@
   }
 
   .mainTitle {
-    font-size: 4.5vmax;
+    font-size: 5vmax;
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -181,16 +181,20 @@
 }
 
 @media only screen and (max-width: 660px) {
+  .content {
+    margin-top: 12px;
+  }
+
   .avatar {
-    width: 9rem;
-    height: 9rem;
+    width: 7.7rem;
+    height: 7.7rem;
     right: 2rem;
     bottom: -4rem;
     background-position: top;
   }
 
   .cv-button {
-    padding: 6px 12px;
+    padding: 6px 10px;
     font-size: 14px;
   }
 

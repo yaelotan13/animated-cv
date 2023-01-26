@@ -66,5 +66,9 @@
 @media only screen and (max-width: 1000px) {
   .bm-burger-button {
     display: block;
+    width: 20px;
+    height: 15px;
+    left: 30px;
+    top: 30px;
   }
 }
