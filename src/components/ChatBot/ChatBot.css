@@ -64,7 +64,6 @@
   fill: #62317c;
 }
 
-/** chat **/
 .chatContainer {
   width: 250px;
   height: 350px;
@@ -74,6 +73,16 @@
   bottom: 15%;
   border-radius: 10px;
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 800px) {
+  .bot {
+    display: none;
+  }
+
+  .chatContainer {
+    display: none;
+  }
 }
 
 .innerContainer {
