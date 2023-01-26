@@ -186,11 +186,11 @@
   }
 
   .avatar {
-    width: 7.7rem;
-    height: 7.7rem;
+    width: 7rem;
+    height: 7rem;
     right: 2rem;
     bottom: -4rem;
-    background-position: top;
+    background-position: top 20% right 40%;
   }
 
   .cv-button {
