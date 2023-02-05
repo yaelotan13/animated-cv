@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/animated-cv/static/css/main.0204cf57.css",
-    "main.js": "/animated-cv/static/js/main.611f8894.js",
+    "main.css": "/animated-cv/static/css/main.962bd155.css",
+    "main.js": "/animated-cv/static/js/main.01901a88.js",
     "static/media/tamagochi.png": "/animated-cv/static/media/tamagochi.095aef2694e63d5d95b1.png",
+    "static/media/RefacrotingUi.png": "/animated-cv/static/media/RefacrotingUi.a9126cc440174af52fee.png",
     "static/media/city.png": "/animated-cv/static/media/city.1e2f6d011a61cad64b9e.png",
     "static/media/react.png": "/animated-cv/static/media/react.57df20a03ac565213b0e.png",
     "static/media/freddieMercury.png": "/animated-cv/static/media/freddieMercury.3104819931032f17bb25.png",
@@ -19,11 +20,11 @@
     "static/media/storybook.png": "/animated-cv/static/media/storybook.615d919326c9dd4da974.png",
     "static/media/bot.png": "/animated-cv/static/media/bot.fbb3e48c288c9effd711.png",
     "index.html": "/animated-cv/index.html",
-    "main.0204cf57.css.map": "/animated-cv/static/css/main.0204cf57.css.map",
-    "main.611f8894.js.map": "/animated-cv/static/js/main.611f8894.js.map"
+    "main.962bd155.css.map": "/animated-cv/static/css/main.962bd155.css.map",
+    "main.01901a88.js.map": "/animated-cv/static/js/main.01901a88.js.map"
   },
   "entrypoints": [
-    "static/css/main.0204cf57.css",
-    "static/js/main.611f8894.js"
+    "static/css/main.962bd155.css",
+    "static/js/main.01901a88.js"
   ]
 }
