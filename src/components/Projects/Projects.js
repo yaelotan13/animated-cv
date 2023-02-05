@@ -28,6 +28,14 @@ export default function Projects() {
       image: "tamagochi",
       link: "https://yaelotan13.github.io/tamagochi/",
     },
+    {
+      title: "Refactoring UI book summary",
+      description:
+        "An interactive book summary build with vanilla JS, HTML and CSS",
+      image: "refactoringUI",
+      link: "https://yaelotan13.github.io/refactoring-ui/",
+      workInProgress: true,
+    },
   ];
   return (
     <div className="pageContainer" id="sideProjects">

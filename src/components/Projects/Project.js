@@ -4,6 +4,7 @@ import Freddie from "../../assets/freddieMercury.png";
 import Lion from "../../assets/lion.png";
 import City from "../../assets/city.png";
 import Tamagochi from "../../assets/tamagochi.png";
+import RefacrotingUi from "../../assets/RefacrotingUi.png";
 
 const getImage = (image) => {
   switch (image) {
@@ -18,6 +19,9 @@ const getImage = (image) => {
     }
     case "tamagochi": {
       return Tamagochi;
+    }
+    case "refactoringUI": {
+      return RefacrotingUi;
     }
     default: {
       return <></>;
@@ -44,6 +48,11 @@ export default function Project({ project }) {
           <div className="innerProjectSection">
             <h3>{project.title}</h3>
             <p className="projectDescription">{project.description}</p>
+            {project.workInProgress && (
+              <p className="workInProgress">
+                ⚠️ this project is a work in progress
+              </p>
+            )}
           </div>
         )}
       </div>

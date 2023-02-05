@@ -140,6 +140,7 @@
   bottom: -7rem;
   right: 2rem;
   background-image: url("/public/me.jpeg");
+  border: 4px solid #303030;
 }
 
 @media only screen and (max-width: 1000px) {
